@@ -1,0 +1,38 @@
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: transform 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    75% { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
+}
+
+.animate {
+    animation: shake 0.5s ease-in-out;
+}
+
+body.light {
+    background-color:whitesmoke;
+    color: black;
+}
+
+body.dark {
+    background-color: grey;
+    color:whitesmoke;
+}
